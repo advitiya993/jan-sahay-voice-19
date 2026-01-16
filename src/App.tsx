@@ -10,6 +10,7 @@ import Verification from "./pages/Verification";
 import Progress from "./pages/Progress";
 import Success from "./pages/Success";
 import Track from "./pages/Track";
+import Chat from "./pages/Chat";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/progress" element={<Progress />} />
           <Route path="/success" element={<Success />} />
           <Route path="/track" element={<Track />} />
+          <Route path="/chat" element={<Chat />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

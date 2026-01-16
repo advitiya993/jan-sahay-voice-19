@@ -81,8 +81,8 @@ const Landing: React.FC = () => {
         {/* Spacer */}
         <div className="flex-1 min-h-8" />
 
-        {/* Track Application Link */}
-        <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        {/* Track Application & Chat Links */}
+        <div className="flex gap-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Button
             variant="ghost"
             onClick={() => navigate('/track')}
@@ -90,6 +90,13 @@ const Landing: React.FC = () => {
           >
             <Search className="h-5 w-5" />
             Already have a tracking ID?
+          </Button>
+          <Button
+            variant="outline"
+            onClick={() => navigate('/chat')}
+            className="gap-2"
+          >
+            Try AI Chat
           </Button>
         </div>
       </div>
